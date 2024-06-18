@@ -1,0 +1,40 @@
+/* Write your CSS here */
+
+.money-details-bg {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: solid 2px;
+  margin-bottom: 15px;
+  color: #475569;
+  width: 100%;
+  margin-right: 15px;
+}
+
+.bg-Balance {
+  background-color: #ecfccb;
+  border-color: #84cc16;
+}
+.bg-Income {
+  background-color: #cffafe;
+  border-color: #06b6d4;
+}
+.bg-Expenses {
+  background-color: #ede9fe;
+  border-color: #7c3aed;
+}
+
+.money-details-img {
+  height: 80px;
+  margin-right: 15px;
+}
+
+.money-details-heading {
+  font-size: 13px;
+}
+
+.money-details-money {
+  font-size: 18px;
+  font-weight: 500;
+}

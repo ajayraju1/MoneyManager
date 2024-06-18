@@ -1,0 +1,129 @@
+/* Write your CSS here */
+
+.money-manager-bg-con {
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.money-manager-bg-con2 {
+  width: 90%;
+  font-family: 'roboto';
+}
+
+.money-manager-profile-con {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  height: 200px;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 50px;
+}
+
+.money-manager-user-name {
+  color: #334155;
+  font-size: 25px;
+}
+
+.money-manager-user-msg {
+  color: #334155;
+  font-size: 18px;
+}
+
+.highlighted-text {
+  color: #0b69ff;
+  font-weight: 600;
+}
+
+.money-transaction-bg-con,
+.money-details-bg-con {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.money-transaction-form {
+  margin-top: 50px;
+  border: 1px solid #7e858e;
+  border-radius: 15px;
+  padding: 50px;
+}
+
+.money-transaction-heading {
+  color: #475569;
+  font-size: 26px;
+}
+
+.label-inp-con {
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-label {
+  font-size: 13px;
+  color: #7e858e;
+  margin-bottom: 10px;
+}
+
+.transaction-inp {
+  height: 40px;
+  border: 1px solid #7e858e;
+  border-radius: 3px;
+  padding: 0 5px;
+}
+
+.transaction-add-btn {
+  height: 40px;
+  width: 70px;
+  background-color: #0b69ff;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.money-transaction-con {
+  border: 1px solid #7e858e;
+  border-radius: 3px;
+  width: 100%;
+}
+
+.money-transaction-heading-con {
+  display: flex;
+  padding: 0 10px;
+  margin-bottom: -10px;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.money-transaction-top-heading {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 28px;
+  color: #334155;
+}
+
+@media (min-width: 768px) {
+  .money-manager-profile-con {
+    align-items: flex-start;
+  }
+
+  .money-details-bg-con {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .money-transaction-history-con {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .money-transaction-form {
+    width: 100%;
+    margin-right: 20px;
+  }
+}

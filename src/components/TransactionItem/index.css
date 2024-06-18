@@ -1,0 +1,26 @@
+/* Write your CSS here */
+
+.transaction-con {
+  display: flex;
+  padding: 0 10px;
+  justify-content: space-around;
+  border: 1.3px solid #7e858e;
+  border-top: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.transaction-text {
+  font-size: 15px;
+  color: #7e858e;
+  font-weight: 500;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+}
+
+.delete-btn-img {
+  height: 25px;
+}
