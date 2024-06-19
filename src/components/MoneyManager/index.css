@@ -38,10 +38,12 @@
   font-weight: 600;
 }
 
-.money-transaction-bg-con,
 .money-details-bg-con {
+  margin-top: 30px;
+}
+
+.money-transaction-bg-con {
   padding: 0;
-  list-style: none;
   margin: 0;
 }
 

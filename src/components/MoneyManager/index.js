@@ -28,40 +28,6 @@ class MoneyManager extends Component {
     transactionsList: [],
   }
 
-  onAddMoneyDetails = () => {
-    const {income, expenses} = this.state
-
-    const moneyDetailsList = [
-      {
-        id: uuidv4(),
-        img:
-          'https://assets.ccbp.in/frontend/react-js/money-manager/balance-image.png',
-        moneyType: 'Balance',
-        money: income - expenses,
-      },
-
-      {
-        id: uuidv4(),
-        img:
-          'https://assets.ccbp.in/frontend/react-js/money-manager/income-image.png',
-        moneyType: 'Income',
-        money: income,
-      },
-
-      {
-        id: uuidv4(),
-        img:
-          'https://assets.ccbp.in/frontend/react-js/money-manager/expenses-image.png',
-        moneyType: 'Expenses',
-        money: expenses,
-      },
-    ]
-
-    return moneyDetailsList.map(eachObj => (
-      <MoneyDetails key={eachObj.id} moneyDetails={eachObj} />
-    ))
-  }
-
   onChangeStateTitle = event => {
     this.setState({title: event.target.value})
   }
@@ -127,7 +93,7 @@ class MoneyManager extends Component {
   }
 
   render() {
-    const {title, amount, type, transactionsList} = this.state
+    const {income, expenses, title, amount, type, transactionsList} = this.state
 
     return (
       <div className="money-manager-bg-con">
@@ -140,7 +106,7 @@ class MoneyManager extends Component {
             </p>
           </div>
 
-          <ul className="money-details-bg-con">{this.onAddMoneyDetails()}</ul>
+          <MoneyDetails income={income} expenses={expenses} />
 
           <div className="money-transaction-history-con">
             <form
